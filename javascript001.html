@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <title>Title</title>
+</head>
+<h4>JQuery Radio Checked</h4>
+<input type="radio" name="abc"/>WOWOWOW1
+<br>
+<input type="radio" name="abc"/>WOWOWOW2
+
+<script>
+
+
+    $(document).ready(function(){
+        $('[name=abc]').click(function () {
+            if($('[name=abc]:checked').prop('checked')){
+                alert('you press this radio!!');
+            }
+        });
+    });
+
+
+</script>
+
+</body>
+</html>
